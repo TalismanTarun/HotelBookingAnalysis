@@ -3,7 +3,7 @@
 ## Objective
 We are provided with a hotel bookings dataset. 
 
-Out main objective is perform EDA on the given dataset and draw useful conclusions about general trends in hotel bookings and how factors governing hotel bookings interact with each other.
+Our main objective is perform EDA on the given dataset and draw useful conclusions about general trends in hotel bookings and how factors governing hotel bookings interact with each other.
 
 ## Dataset
 We are given a hotel bookings dataset. This dataset contains booking information for a city hotel and a resort hotel. It contains the following features.
@@ -46,7 +46,7 @@ We are given a hotel bookings dataset. This dataset contains booking information
 
 - Total number of rows in data: 119390
 - Total number of columns: 32
-## Data Cleaning and Feature Engineering
+## Data Cleaning
 
 ### (1) Removing Duplicate rows
 All duplicate rows were dropped.
@@ -69,3 +69,24 @@ All duplicate rows were dropped.
 ### (5) Creating new columns
 - Created new column `total_stay` by adding `stays_in_weekend_nights`+`stays_in_week_nights`.
 - Created new column `total_people` by adding `adults`+`children`+`babies`.
+
+## Exploratory Data Analysis
+- Used Heatmap to show the corelation between all the columns.
+- Used Scatterplot to check for any outliers and removing it.
+### Answering Business Questions
+1. Which Agent did most number of Booking?  Agent 9
+2. Which room type is in most demand?  Room type A
+3. Which room type generate the highest adr? Room type H
+4. Which meal type is most preffered? Bed and Breakfast
+5. What is percentage of bookings in each hotel? 60% City Hotel 40% Resort Hotel
+6. What is the most common channel for booking hotel? TA/TO
+7. Which month is most busy for bookings? August
+8. Most number of guest from which country? Portugal
+9. How long people stay in hotel? Maximum people stay 3 days then at 2nd place we have 1 day.
+10. Which hotel has higher cancellation rate? City Hotel has higher cancellation rate 30%
+11. Which hotel has higher chance of repeated stay? Resort Hotel 
+12. Does a longer waiting period causes cancellation of bookings? No
+13. Whether not getting the same room type as demand is main cause of cancellation for bookings? It is one of the cause but not the main cause.
+14. Does not alloting the same room as demanded affects adr? No
+15. Which types of customers mostly make bookings? Couples
+
